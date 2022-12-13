@@ -107,11 +107,19 @@ text-align: center;
     height: 550px;
 
 }
-#how{
 
-}
 
 @media only screen and (max-width: 1000px) {
+    .words{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 60px;
+    }
+    *>*>p{
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 60px;
+    }
 #how{
     margin-bottom: 150px;
 }
@@ -137,5 +145,5 @@ text-align: center;
 }
 #end{
     padding-top: 15rem;
-    margin-bottom: 150px;
+    padding-bottom: 150px;
 }

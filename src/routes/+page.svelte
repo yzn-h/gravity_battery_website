@@ -14,7 +14,6 @@
     function getRockPostion(scroll) {
         return Math.min(scroll * 1.25, 1200);
     }
-    import animationData from './crane_animation.json'
 
     /**
      * @type {HTMLElement}
@@ -23,9 +22,10 @@
     onMount(async function(){
         lottie.loadAnimation({
 container:crane_animation_contaner,
-animationData
-        })
-  })
+path:'https://assets5.lottiefiles.com/packages/lf20_VWz8YDBMOZ.json',
+rendererSettings: {
+    progressiveLoad: true // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+  }})})
 </script>
 
 <svelte:window
@@ -314,20 +314,27 @@ animationData
 
 <section id="how">
     <h2>كيف تعمل بطارية الجاذبية؟</h2>
-    <div >
-        <p>
-            تعمل بطارية الجاذبية عن طريق استغلال الطاقة الزائدة في شبكة الكهرباء
-            لرفع اثقال فيتولد فيها طاقة وضع وعند الحاجة للطاقة يتم انزال الثقل
+    <div>
+        <p>تعمل بطارية الجاذبية
+            عن طريق استغلال الطاقة الزائدة
+            في شبكة الكهرباء  لرفع اثقال
+             فيتولد فيها طاقة وضع
+            وعند الحاجة للطاقة يتم انزال الثقل
             باستخدام مولد كهربائي
-        </p>
+            </p>
 <div bind:this={crane_animation_contaner}></div>
+
     </div>
+
+
+        
+    
 </section>
 
 
 <section id="end">
     <h2>وفي الختام</h2>
-        <p>
+        <p class=words style="font-size:25px">
             بطارية الجاذبية ليست مثالية, لكن لو تطورت يمكن اعتبارها حل واقعي لمشكلة كبيرة في مجال الطاقة
         </p>
         <h2>عمل الطالب يزن حمزه</h2>
