@@ -1,0 +1,141 @@
+:root{
+    --main-color: #0e2b3c;
+    --content: #deebf4;
+    --content-less: #828886;
+    --rock: #364b4a;
+    --metal:#a6dbfb;
+}
+
+body{
+    background-color: var(--main-color);
+    color: var(--content);
+
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+a{
+    color: var(--content);
+}
+
+h1{
+    font-size: 3rem;
+
+}
+
+h2{
+    font-size: 4rem;
+    background-color: #0e2b3c;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+a > h3{
+    background-color: #0e2b3c;
+    padding: 2px;
+}
+
+section{
+    display: flex;
+    position: relative;
+    flex-direction: column;    
+    justify-content: center;
+    align-items: center;
+   height: 96vh;
+}
+#head > h1{
+    margin: 0;
+    padding: 15px;
+    background-color: var(--main-color);
+    word-wrap: break-word ;
+}
+
+#table{
+    text-align: right;
+    margin: 4rem;
+}
+#table > h2{
+    padding: 0 35px 0 35px;
+} 
+
+h3{
+    font-size: 2rem;
+}
+
+
+#main > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+
+#main >*> p{
+text-align: center;
+}
+
+#prob > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+#prob >*> p{
+    text-align: center;
+}
+
+
+
+#how > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#how> div>p{
+    font-size: 2rem;
+    width: 40vw ;
+    line-height: 5rem;
+}
+
+#how>div>div{
+    height: 550px;
+
+}
+#how{
+
+}
+
+@media only screen and (max-width: 1000px) {
+#how{
+    margin-bottom: 150px;
+}
+    #how > div {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 5px;
+        text-align: center;
+    }
+    #how>div>div{
+        height: 550px;
+
+    }
+}
+
+
+#end>p{
+    text-align: center;
+    font-size: 2.5rem;
+    width: 40vw ;
+    line-height: 5rem;
+}
+#end{
+    padding-top: 15rem;
+    margin-bottom: 150px;
+}

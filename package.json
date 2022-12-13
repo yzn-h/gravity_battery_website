@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
+		"lottie-web": "^5.10.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^2.9.2",
 		"typescript": "^4.9.3",
