@@ -1,6 +1,7 @@
 <script>
     import { onMount } from "svelte";
-    import lottie from "lottie-web";
+    import lottie from 'lottie-web'
+
 
     /**
      * @type {any}
@@ -17,16 +18,14 @@
     /**
      * @type {HTMLElement}
      */
-    let crane_animation_contaner;
-    onMount(async function () {
+    let crane_animation_contaner
+    onMount(async function(){
         lottie.loadAnimation({
-            container: crane_animation_contaner,
-            path: "https://assets5.lottiefiles.com/packages/lf20_VWz8YDBMOZ.json",
-            rendererSettings: {
-                progressiveLoad: true, // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
-            },
-        });
-    });
+container:crane_animation_contaner,
+path:'https://assets5.lottiefiles.com/packages/lf20_VWz8YDBMOZ.json',
+rendererSettings: {
+    progressiveLoad: true // Boolean, only svg renderer, loads dom elements when needed. Might speed up initialization for large number of elements.
+  }})})
 </script>
 
 <svelte:window
@@ -251,29 +250,27 @@
         ></svg
     >
     <h1>بطارية الجاذبية</h1>
-    <a href="#table">
-        <svg
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            width="51"
-            xmlns="http://www.w3.org/2000/svg"
-            height="66"
-            id="screenshot-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-            viewBox="1065.5 937 51 66"
-            style="bottom: 50;position: absolute; -webkit-print-color-adjust: exact;"
-            fill="none"
-            version="1.1"
-            ><g id="shape-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-                ><g id="fills-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-                    ><path
-                        rx="0"
-                        ry="0"
-                        d="M1065.5,982.343L1065.5,1003L1116.5,1003L1116.5,982.343L1106.3,982.343L1106.3,992.671L1096.1,992.671L1096.1,951.357L1085.9,951.357L1085.9,992.671L1075.7,992.671L1075.7,982.343L1065.5,982.343ZM1085.39,937"
-                        style="fill: rgb(222, 235, 244); fill-opacity: 1;"
-                    /></g
-                ></g
-            ></svg
-        >
-    </a>
+    <svg
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="51"
+        xmlns="http://www.w3.org/2000/svg"
+        height="66"
+        id="screenshot-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
+        viewBox="1065.5 937 51 66"
+        style="bottom: 50;position: absolute; -webkit-print-color-adjust: exact;"
+        fill="none"
+        version="1.1"
+        ><g id="shape-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
+            ><g id="fills-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
+                ><path
+                    rx="0"
+                    ry="0"
+                    d="M1065.5,982.343L1065.5,1003L1116.5,1003L1116.5,982.343L1106.3,982.343L1106.3,992.671L1096.1,992.671L1096.1,951.357L1085.9,951.357L1085.9,992.671L1075.7,992.671L1075.7,982.343L1065.5,982.343ZM1085.39,937"
+                    style="fill: rgb(222, 235, 244); fill-opacity: 1;"
+                /></g
+            ></g
+        ></svg
+    >
 </section>
 
 <section id="table">
@@ -311,54 +308,34 @@
     </div>
 </section>
 
-<div style="height: 150vh;">
-    <section style="text-align: center;">
-        <h2>ومـن هـذه الاشكال<br /><u>بــطـارية الجـاذبية</u></h2>
-    </section>
-</div>
+<section style="text-align: center;">
+    <h2>ومـن هـذه الاشكال<br /><u>بــطـارية الجـاذبية</u></h2>
+</section>
 
 <section id="how">
     <h2>كيف تعمل بطارية الجاذبية؟</h2>
     <div>
-        <p>
-            تعمل بطارية الجاذبية عن طريق استغلال الطاقة الزائدة في شبكة الكهرباء
-            لرفع اثقال فيتولد فيها طاقة وضع وعند الحاجة للطاقة يتم انزال الثقل
+        <p>تعمل بطارية الجاذبية
+            عن طريق استغلال الطاقة الزائدة
+            في شبكة الكهرباء  لرفع اثقال
+             فيتولد فيها طاقة وضع
+            وعند الحاجة للطاقة يتم انزال الثقل
             باستخدام مولد كهربائي
-        </p>
-        <div bind:this={crane_animation_contaner} />
+            </p>
+<div bind:this={crane_animation_contaner}></div>
+
     </div>
+
+
+        
+    
 </section>
+
 
 <section id="end">
     <h2>وفي الختام</h2>
-    <p class="words" style="font-size:25px">
-        بطارية الجاذبية ليست مثالية, لكن لو تطورت يمكن اعتبارها حل واقعي لمشكلة
-        كبيرة في مجال الطاقة
-    </p>
-    <h2>عمل الطالب يزن حمزه</h2>
+        <p class=words style="font-size:25px">
+            بطارية الجاذبية ليست مثالية, لكن لو تطورت يمكن اعتبارها حل واقعي لمشكلة كبيرة في مجال الطاقة
+        </p>
+        <h2>عمل الطالب يزن حمزه</h2>
 </section>
-{#if scroll >= 1800}
-<a href="#table">\
-    <svg
-xmlns:xlink="http://www.w3.org/1999/xlink"
-xmlns="http://www.w3.org/2000/svg"
-height="55"
-id="screenshot-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-viewBox="1065.5 937 51 66"
-style="bottom: 5px; right: 35px; -webkit-transform: scaleY(-1);transform: scaleY(-1);bottom: 50;position: fixed; -webkit-print-color-adjust: exact;"
-fill="none"
-version="1.1"
-><g id="shape-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-    ><g id="fills-e2677fc7-f8ce-802a-8001-bccb23dc6c52"
-        ><path
-            rx="0"
-            ry="0"
-            d="M1065.5,982.343L1065.5,1003L1116.5,1003L1116.5,982.343L1106.3,982.343L1106.3,992.671L1096.1,992.671L1096.1,951.357L1085.9,951.357L1085.9,992.671L1075.7,992.671L1075.7,982.343L1065.5,982.343ZM1085.39,937"
-            style="fill: rgb(222, 235, 244); fill-opacity: 1;"
-        /></g
-    ></g
-></svg
->
-</a>
-
-{/if}
