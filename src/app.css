@@ -122,6 +122,8 @@ text-align: center;
     }
 #how{
     margin-bottom: 150px;
+    text-align: center;
+    height: 150vh;
 }
     #how > div {
         display: flex;
@@ -131,7 +133,7 @@ text-align: center;
         text-align: center;
     }
     #how>div>div{
-        height: 550px;
+        height: 75%;
 
     }
 }
@@ -146,4 +148,7 @@ text-align: center;
 #end{
     padding-top: 15rem;
     padding-bottom: 150px;
+    height: 115vh;
+    text-align: center;
+
 }
