@@ -136,9 +136,17 @@ text-align: center;
         height: 75%;
 
     }
+
+    #end{
+        margin-top: 5vmax;
+    }
 }
 
-
+@media screen and (max-width: 500px){
+    #end{
+        margin-top: 25vh;
+    }
+}
 #end>p{
     text-align: center;
     font-size: 2.5rem;

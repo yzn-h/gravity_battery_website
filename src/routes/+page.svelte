@@ -1,18 +1,10 @@
 <script>
     import { onMount } from "svelte";
     import lottie from "lottie-web";
-
     /**
      * @type {any}
      */
     let scroll;
-
-    /**
-     * @param {number} scroll
-     */
-    function getRockPostion(scroll) {
-        return Math.min(scroll * 1.25, 1200);
-    }
 
     /**
      * @type {HTMLElement}
@@ -31,9 +23,6 @@
 
 <svelte:window
     bind:scrollY={scroll}
-    on:scroll={() => {
-        console.log(scroll);
-    }}
 />
 
 <section id="head">
@@ -130,14 +119,14 @@
                     filter="url(#filter_49a9d398-29e7-80d4-8001-bceb5749b8d6)"
                     ><g class="stroke-shape"
                         ><rect
-                            rx="0"
-                            ry="0"
-                            x="153"
-                            y="35"
-                            width="21"
-                            height={69 + getRockPostion(scroll)}
-                            style="fill: none; stroke-width: 6; stroke: rgb(130, 136, 134); stroke-opacity: 1;"
-                        /></g
+                        rx="0"
+                        ry="0"
+                        x="153"
+                        y="35"
+                        width="21"
+                        height={69+Math.min(scroll*1.5, 1200)}
+                        style="fill: none; stroke-width: 6; stroke: rgb(130, 136, 134); stroke-opacity: 1;"
+                    /></g
                     ></g
                 ></g
             ><g id="shape-e2677fc7-f8ce-802a-8001-bcc92a999055"
@@ -205,16 +194,16 @@
                     ></defs
                 ><g id="rock"
                     ><rect
-                        width="44.5"
-                        height="73"
-                        x="141"
-                        transform="matrix(1,0,0,1,0,0)"
-                        style="fill: rgb(54, 75, 74);"
-                        ry="0"
-                        rx="0"
-                        filter="url(#filter_49a9d398-29e7-80d4-8001-bceb574cec7b)"
-                        y={104 + getRockPostion(scroll)}
-                    /></g
+                    width="44.5"
+                    height="73"
+                    x="141"
+                    transform="matrix(1,0,0,1,0,0)"
+                    style="fill: rgb(54, 75, 74);"
+                    ry="0"
+                    rx="0"
+                    filter="url(#filter_49a9d398-29e7-80d4-8001-bceb574cec7b)"
+                    y={104 + Math.min(scroll*1.5, 1200)}
+                /></g
                 ></g
             ><g id="shape-e2677fc7-f8ce-802a-8001-bce6ecf89fed"
                 ><g id="fills-e2677fc7-f8ce-802a-8001-bce6ecf89fed"
@@ -331,7 +320,7 @@
 
 <section id="end">
     <h2>وفي الختام</h2>
-    <p class="words" style="font-size:25px">
+    <p class="words" style="font-size:25px;">
         بطارية الجاذبية ليست مثالية, لكن لو تطورت يمكن اعتبارها حل واقعي لمشكلة
         كبيرة في مجال الطاقة
     </p>
